@@ -1,12 +1,27 @@
 package com.wecp.progressive.controller;
 
 import com.wecp.progressive.entity.Supplier;
+import com.wecp.progressive.service.impl.SupplierServiceImplArraylist;
+import com.wecp.progressive.service.impl.SupplierServiceImplJpa;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-
+@RestController
+@RequestMapping("/supplier")
 public class SupplierController {
-
+    @Autowired
+    SupplierServiceImplArraylist supplierServiceImplArraylist;
+    @Autowired
+    SupplierServiceImplJpa supplierServiceImplJpa;
+    
     public ResponseEntity<List<Supplier>> getAllSuppliers() {
         return null;
     }
@@ -27,15 +42,21 @@ public class SupplierController {
         return null;
     }
 
-    public ResponseEntity<List<Supplier>> getAllSuppliersFromArrayList() {
-        return null;
+    @GetMapping("/fromArrayList") 
+    public ResponseEntity<List<Supplier>> getAllSuppliersFromArrayList() 
+    { List<Supplier> suppliers = supplierServiceImplArraylist.getAllSuppliers(); 
+        return new ResponseEntity<>(suppliers,HttpStatus.OK); 
     }
 
-    public ResponseEntity<Integer> addSupplierToArrayList(Supplier supplier) {
-        return null;
+    @PostMapping("/toArrayList") 
+    public ResponseEntity<Integer> addSupplierToArrayList(@RequestBody Supplier supplier) 
+    { int supplierId = supplierServiceImplArraylist.addSupplier(supplier); 
+        return  new ResponseEntity<>(supplierId,HttpStatus.CREATED); 
     }
-
-    public ResponseEntity<List<Supplier>> getAllSuppliersSortedByNameFromArrayList() {
-        return null;
+    @GetMapping("/fromArrayList/all") 
+    public ResponseEntity<List<Supplier>> getAllSuppliersSortedByNameFromArrayList() 
+    { 
+        List<Supplier> supplierss = supplierServiceImplArraylist.getAllSuppliersSortedByName(); 
+        return new ResponseEntity<>(supplierss, HttpStatus.OK); 
     }
 }
