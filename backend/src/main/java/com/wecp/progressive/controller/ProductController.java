@@ -1,6 +1,7 @@
 package com.wecp.progressive.controller;
 
 import com.wecp.progressive.entity.Product;
+<<<<<<< HEAD
 import com.wecp.progressive.exception.InsufficientCapacityException;
 import com.wecp.progressive.exception.SupplierDoesNotExistException;
 import com.wecp.progressive.service.impl.ProductServiceImplJpa;
@@ -77,5 +78,35 @@ public class ProductController {
     public ResponseEntity<List<Product>> getAllProductByWarehouse(@PathVariable int warehouseId) throws SQLException {
         List<Product> products = productServiceImplJpa.getAllProductByWarehouse(warehouseId);
         return new ResponseEntity<>(products, HttpStatus.OK);
+=======
+import org.springframework.http.ResponseEntity;
+
+import java.util.List;
+
+public class ProductController {
+
+    public ResponseEntity<List<Product>> getAllProducts() {
+        return null;
+    }
+
+    public ResponseEntity<Product> getProductById(int productId) {
+        return null;
+    }
+
+    public ResponseEntity<Integer> addProduct(Product product) {
+        return null;
+    }
+
+    public ResponseEntity<Void> updateProduct(int productId, Product product) {
+        return null;
+    }
+
+    public ResponseEntity<Void> deleteProduct(int productId) {
+        return null;
+    }
+
+    public ResponseEntity<List<Product>> getAllProductByWarehouse(int warehouseId) {
+        return null;
+>>>>>>> 6eac17dfc6959ce859888e6275c17b3e3a5462e8
     }
 }

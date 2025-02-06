@@ -106,6 +106,7 @@
       <artifactId>spring-boot-devtools</artifactId>
       <optional>true</optional>
     </dependency>
+<<<<<<< HEAD
   <!-- CORS -->
   <dependency>
     <groupId>org.apache.httpcomponents.client5</groupId>
@@ -115,6 +116,10 @@
   </dependencies>
 
 
+=======
+  </dependencies>
+
+>>>>>>> 6eac17dfc6959ce859888e6275c17b3e3a5462e8
   <build>
     <plugins>
       <plugin>

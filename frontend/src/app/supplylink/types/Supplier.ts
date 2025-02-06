@@ -1,4 +1,5 @@
 export class Supplier {
+<<<<<<< HEAD
     supplierId: number | undefined;
     supplierName: string;
     email: string;
@@ -28,3 +29,14 @@ export class Supplier {
         this.role = role;
     }
 }
+=======
+  
+
+   
+}
+
+
+
+
+
+>>>>>>> 6eac17dfc6959ce859888e6275c17b3e3a5462e8

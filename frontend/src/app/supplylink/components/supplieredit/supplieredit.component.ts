@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Component, OnInit } from '@angular/core';
 import { Supplier } from '../../types/Supplier';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
@@ -103,5 +104,11 @@ export class SupplierEditComponent implements OnInit {
             this.successMessage = null;
         }
     }
+=======
+
+export class SupplierEditComponent  {
+
+ 
+>>>>>>> 6eac17dfc6959ce859888e6275c17b3e3a5462e8
 
 }

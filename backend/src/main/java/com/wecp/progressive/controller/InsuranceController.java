@@ -1,6 +1,7 @@
 package com.wecp.progressive.controller;
 
 import com.wecp.progressive.entity.Insurance;
+<<<<<<< HEAD
 import com.wecp.progressive.service.impl.InsuranceServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -71,5 +72,30 @@ public class InsuranceController {
         } catch (SQLException e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
+=======
+import org.springframework.http.ResponseEntity;
+
+import java.util.List;
+
+public class InsuranceController {
+    public ResponseEntity<List<Insurance>> getAllInsurances() {
+        return null;
+    }
+
+    public ResponseEntity<Insurance> getInsuranceById(int insuranceId) {
+        return null;
+    }
+
+    public ResponseEntity<Integer> createInsurance(Insurance insurance) {
+        return null;
+    }
+
+    public ResponseEntity<Void> updateInsurance(int insuranceId, Insurance insurance) {
+        return null;
+    }
+
+    public ResponseEntity<Void> deleteInsurance(int insuranceId) {
+        return null;
+>>>>>>> 6eac17dfc6959ce859888e6275c17b3e3a5462e8
     }
 }

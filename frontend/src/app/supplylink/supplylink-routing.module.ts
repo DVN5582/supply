@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
+<<<<<<< HEAD
 import { DashboardComponent } from "./components/dashboard/dashboard.component";
 import { SupplierComponent } from "./components/supplier/supplier.component";
 import { WarehouseComponent } from "./components/warehouse/warehouse.component";
@@ -15,6 +16,10 @@ const routes: Routes = [
   { path: "supplier/edit", component: SupplierEditComponent },
   { path: "warehouse/edit", component: WarehouseEditComponent },
 ];
+=======
+
+const routes: Routes = [];
+>>>>>>> 6eac17dfc6959ce859888e6275c17b3e3a5462e8
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

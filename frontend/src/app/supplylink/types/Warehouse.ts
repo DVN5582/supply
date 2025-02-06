@@ -1,4 +1,5 @@
 import { Supplier } from "./Supplier";
+<<<<<<< HEAD
 
 export class Warehouse {
     warehouseId: number;
@@ -22,3 +23,8 @@ export class Warehouse {
     }
 }
 
+=======
+export class Warehouse {
+ 
+}
+>>>>>>> 6eac17dfc6959ce859888e6275c17b3e3a5462e8

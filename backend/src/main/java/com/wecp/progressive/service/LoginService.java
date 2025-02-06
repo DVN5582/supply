@@ -1,6 +1,7 @@
 package com.wecp.progressive.service;
 
 import com.wecp.progressive.entity.Supplier;
+<<<<<<< HEAD
 import com.wecp.progressive.exception.SupplierAlreadyExistsException;
 import com.wecp.progressive.repository.SupplierRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -55,10 +56,42 @@ public class LoginService implements UserDetailsService {
 
     public void deleteUser(Integer id) {
         supplierRepository.deleteBySupplierId(id);
+=======
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+
+import java.util.List;
+import java.util.Optional;
+
+public class LoginService implements UserDetailsService {
+
+    public List<Supplier> getAllUsers() {
+        return null;
+    }
+
+    public Optional<Supplier> getUserById(Integer userId) {
+        return null;
+    }
+
+    public Supplier getSupplierByName(String username) {
+        return null;
+    }
+
+    public Supplier createUser(Supplier user) {
+        return null;
+    }
+
+    public Supplier updateUser(Supplier user) {
+        return null;
+    }
+
+    public void deleteUser(Integer id) {
+>>>>>>> 6eac17dfc6959ce859888e6275c17b3e3a5462e8
     }
 
     @Override
     public UserDetails loadUserByUsername(String username) {
+<<<<<<< HEAD
         Supplier user = supplierRepository.findByUsername(username);
         if (user == null) {
             throw new UsernameNotFoundException("User not found");
@@ -69,5 +102,8 @@ public class LoginService implements UserDetailsService {
                 user.getPassword(),
                 new ArrayList<>()
         );
+=======
+        return null;
+>>>>>>> 6eac17dfc6959ce859888e6275c17b3e3a5462e8
     }
 }

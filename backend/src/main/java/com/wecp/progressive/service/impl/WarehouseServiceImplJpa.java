@@ -1,5 +1,6 @@
 package com.wecp.progressive.service.impl;
 
+<<<<<<< HEAD
 import com.wecp.progressive.entity.Warehouse;
 import com.wecp.progressive.exception.NoWarehouseFoundForSupplierException;
 import com.wecp.progressive.repository.ProductRepository;
@@ -71,4 +72,41 @@ public class WarehouseServiceImplJpa implements WarehouseService {
         }
         return warehouseList;
     }
+=======
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.wecp.progressive.dao.WarehouseDAO;
+import com.wecp.progressive.dao.WarehouseDAOImpl;
+import com.wecp.progressive.entity.Warehouse;
+import com.wecp.progressive.service.WarehouseService;
+@Service
+public class WarehouseServiceImplJpa implements WarehouseService  {
+
+
+    private WarehouseDAO warehouseDAO;
+    public WarehouseServiceImplJpa (WarehouseDAOImpl warehouseDAO)  {
+        this.warehouseDAO = warehouseDAO;
+    }
+
+    @Override
+    public List<Warehouse> getAllWarehouses() {
+        // TODO Auto-generated method stub
+        return List.of();
+    }
+
+    @Override
+    public int addWarehouse(Warehouse warehouse) {
+        // TODO Auto-generated method stub
+        return -1;
+    }
+
+    @Override
+    public List<Warehouse> getWarehousesSortedByCapacity() {
+        // TODO Auto-generated method stub
+        return List.of();
+    }
+    
+>>>>>>> 6eac17dfc6959ce859888e6275c17b3e3a5462e8
 }

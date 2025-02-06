@@ -1,6 +1,7 @@
 package com.wecp.progressive.controller;
 
 import com.wecp.progressive.dto.LoginRequest;
+<<<<<<< HEAD
 import com.wecp.progressive.dto.LoginResponse;
 import com.wecp.progressive.entity.Supplier;
 import com.wecp.progressive.jwt.JwtUtil;
@@ -56,5 +57,17 @@ public class LoginController {
         Integer userId = foundUser.getSupplierId();
         System.out.println("User Roles: " + role);
         return ResponseEntity.ok(new LoginResponse(token, role, userId));
+=======
+import com.wecp.progressive.entity.Supplier;
+import org.springframework.http.ResponseEntity;
+
+public class LoginController {
+    public ResponseEntity<Supplier> registerUser(Supplier user) {
+        return null;
+    }
+
+    public ResponseEntity loginUser(LoginRequest loginRequest) {
+        return null;
+>>>>>>> 6eac17dfc6959ce859888e6275c17b3e3a5462e8
     }
 }

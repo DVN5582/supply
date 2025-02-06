@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 import { Component, OnInit } from '@angular/core';
 import { SupplyLinkService } from '../../services/supplylink.service';
 import { Supplier } from '../../types/Supplier';
@@ -216,4 +217,9 @@ export class DashboardComponent implements OnInit {
             error: (error) => console.error('Error loading warehouse by ID:', error)
         });
     }
+=======
+export class DashboardComponent  {
+ 
+
+>>>>>>> 6eac17dfc6959ce859888e6275c17b3e3a5462e8
 }

@@ -6,6 +6,11 @@ import com.wecp.progressive.entity.Supplier;
 import java.sql.SQLException;
 import java.util.List;
 
+<<<<<<< HEAD
+=======
+import org.springframework.stereotype.Service;
+
+>>>>>>> 6eac17dfc6959ce859888e6275c17b3e3a5462e8
 public interface SupplierService {
     List<Supplier> getAllSuppliers() throws SQLException;
 
@@ -27,4 +32,8 @@ public interface SupplierService {
         return null;
     }
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 6eac17dfc6959ce859888e6275c17b3e3a5462e8

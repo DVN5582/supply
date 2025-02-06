@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Component, OnInit } from "@angular/core";
 import { Warehouse } from '../../types/Warehouse';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
@@ -72,3 +73,10 @@ export class WarehouseComponent implements OnInit {
     console.error('An error occurred:', this.errorMessage);
   }
 }
+=======
+
+export class WarehouseComponent {
+ 
+
+}
+>>>>>>> 6eac17dfc6959ce859888e6275c17b3e3a5462e8

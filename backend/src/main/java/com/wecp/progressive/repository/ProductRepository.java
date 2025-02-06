@@ -1,5 +1,6 @@
 package com.wecp.progressive.repository;
 
+<<<<<<< HEAD
 import com.wecp.progressive.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
@@ -28,4 +29,8 @@ public interface ProductRepository extends JpaRepository<Product, Integer> {
     void deleteBySupplierId(@Param("supplierId") int supplierId);
 
     int countByWarehouse_WarehouseId(Integer warehouseId);
+=======
+
+public interface ProductRepository {
+>>>>>>> 6eac17dfc6959ce859888e6275c17b3e3a5462e8
 }

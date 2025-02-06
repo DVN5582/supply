@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Product } from '../../types/Product';
@@ -53,4 +54,8 @@ export class ProductComponent implements OnInit {
             error: (error) => this.productError = of("Unable to create product")
         });
     }
+=======
+export class ProductComponent {
+ 
+>>>>>>> 6eac17dfc6959ce859888e6275c17b3e3a5462e8
 }

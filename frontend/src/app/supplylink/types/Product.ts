@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Warehouse } from "./Warehouse";
 
 export class Product {
@@ -26,3 +27,11 @@ export class Product {
 
 }
 
+=======
+
+import { Warehouse } from './Warehouse';
+
+export class Product {
+  
+}
+>>>>>>> 6eac17dfc6959ce859888e6275c17b3e3a5462e8

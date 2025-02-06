@@ -1,6 +1,7 @@
 package com.wecp.progressive.controller;
 
 import com.wecp.progressive.entity.Shipment;
+<<<<<<< HEAD
 import com.wecp.progressive.service.impl.ShipmentServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -66,5 +67,31 @@ public class ShipmentController {
         } catch (SQLException e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
+=======
+import org.springframework.http.ResponseEntity;
+
+import java.util.List;
+
+public class ShipmentController {
+
+    public ResponseEntity<List<Shipment>> getAllShipments() {
+        return null;
+    }
+
+    public ResponseEntity<Shipment> getShipmentById(int shipmentId) {
+        return null;
+    }
+
+    public ResponseEntity<Integer> addShipment(Shipment shipment) {
+        return null;
+    }
+
+    public ResponseEntity<Void> updateShipment(int shipmentId, Shipment shipment) {
+        return null;
+    }
+
+    public ResponseEntity<Void> deleteShipment(int shipmentId) {
+        return null;
+>>>>>>> 6eac17dfc6959ce859888e6275c17b3e3a5462e8
     }
 }

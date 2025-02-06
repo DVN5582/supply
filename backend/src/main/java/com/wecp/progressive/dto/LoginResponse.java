@@ -1,12 +1,16 @@
 package com.wecp.progressive.dto;
 
+<<<<<<< HEAD
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+=======
+>>>>>>> 6eac17dfc6959ce859888e6275c17b3e3a5462e8
 public class LoginResponse {
    private String token;
    private String roles;
    private Integer userId;
+<<<<<<< HEAD
 
    @JsonCreator
    public LoginResponse(@JsonProperty("token") String token , String roles, Integer userId) {
@@ -41,4 +45,6 @@ public class LoginResponse {
    {
       return this.userId;
    }
+=======
+>>>>>>> 6eac17dfc6959ce859888e6275c17b3e3a5462e8
 }
